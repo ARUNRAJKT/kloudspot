@@ -201,7 +201,7 @@ export default function AppShell({ children }) {
       </div>
 
       <div className="flex min-w-0 flex-1 flex-col">
-        <header className="flex items-center gap-3 border-b border-neutral-200 bg-white px-4 py-3 sm:px-6">
+        <header className="sticky top-0 z-30 flex items-center gap-3 border-b border-neutral-200 bg-white px-4 py-3 sm:px-6">
           <button
             type="button"
             className={`rounded-md p-1 text-neutral-700 ${menuOpen ? "md:hidden" : ""}`}
