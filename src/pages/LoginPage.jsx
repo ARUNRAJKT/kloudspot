@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import eyeClose from "@/assets/login/eyeclose.svg";
 import eyeOpen from "@/assets/login/eyeopen.svg";
+import loginBackground from "@/assets/login/loginbackground.png";
 import loginPanelTop from "@/assets/login/loginpaneltop.svg";
 import LanguageMenu from "@/components/LanguageMenu";
 import { Button } from "@/components/ui/button";
@@ -51,7 +52,7 @@ export default function LoginPage() {
         <LanguageMenu />
       </div>
       <img
-        src="/office-bg.jpg"
+        src={loginBackground}
         alt=""
         className="absolute inset-0 h-full w-full object-cover"
       />
