@@ -1,0 +1,91 @@
+{
+  "login": {
+    "welcomeLead": "Welcome to the",
+    "welcomeRest": "Crowd Management System",
+    "id": "Log In",
+    "emailPlaceholder": "Please enter your email",
+    "password": "Password",
+    "passwordPlaceholder": "Please enter your password",
+    "submit": "Login",
+    "submitting": "Signing in…",
+    "showPassword": "Show password",
+    "hidePassword": "Hide password"
+  },
+  "nav": {
+    "overview": "Overview",
+    "entries": "Crowd Entries",
+    "logout": "Logout",
+    "solutions": "Crowd Solutions",
+    "selectSite": "Select site",
+    "today": "Today",
+    "chooseDate": "Choose date",
+    "account": "Account",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "language": "Language"
+  },
+  "languages": {
+    "en": "English",
+    "hi": "हिन्दी"
+  },
+  "metrics": {
+    "occupancy": "Occupancy",
+    "live": "Live Occupancy",
+    "footfall": "Today's Footfall",
+    "footfallDay": "Footfall",
+    "dwell": "Avg Dwell Time",
+    "more": "{{percent}}% More than yesterday",
+    "less": "{{percent}}% Less than yesterday",
+    "same": "Same as yesterday"
+  },
+  "charts": {
+    "overall": "Overall Occupancy",
+    "occupancy": "Occupancy",
+    "demographics": "Demographics",
+    "donut": "Chart of Demographics",
+    "analysis": "Demographics Analysis",
+    "total": "Total Crowd",
+    "males": "{{percent}}% Males",
+    "females": "{{percent}}% Females",
+    "male": "Male",
+    "female": "Female",
+    "time": "Time",
+    "count": "Count",
+    "live": "Live"
+  },
+  "entries": {
+    "name": "Name",
+    "sex": "Sex",
+    "entry": "Entry",
+    "exit": "Exit",
+    "dwell": "Dwell Time",
+    "loading": "Loading entries…",
+    "empty": "No entries for today.",
+    "emptyDay": "No entries for this day.",
+    "previous": "Previous page",
+    "next": "Next page"
+  },
+  "gender": {
+    "male": "Male",
+    "female": "Female"
+  },
+  "alerts": {
+    "title": "Alerts",
+    "open": "Alerts",
+    "close": "Close alerts",
+    "empty": "No alerts yet.",
+    "entered": "Entered",
+    "exited": "Exited",
+    "high": "High",
+    "medium": "Medium",
+    "low": "Low"
+  },
+  "errors": {
+    "required": "Enter your login ID and password.",
+    "invalid": "Invalid credentials",
+    "signIn": "Unable to sign in.",
+    "metrics": "Unable to load occupancy metrics.",
+    "entries": "Unable to load crowd entries.",
+    "sites": "Unable to load sites."
+  }
+}
