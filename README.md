@@ -1,6 +1,6 @@
 # Kloudspot Crowd Management
 
-Responsive web app for live crowd occupancy, footfall, dwell time, demographics, and entry-exit history. All figures come from the Kloudspot hiring API. There is no local backend.
+Responsive web app for live crowd occupancy, footfall, dwell time, demographics, and entry-exit history.
 
 ## Stack
 
@@ -16,7 +16,7 @@ Responsive web app for live crowd occupancy, footfall, dwell time, demographics,
 
 - Sign in with a JWT. The token is kept in `sessionStorage` and cleared on logout, on `401`, and when it expires.
 - Overview: live occupancy, footfall, and average dwell, each compared with the previous day.
-- Occupancy area chart, demographics donut, and male/female lines. Each request renders as soon as it returns.
+- Occupancy area chart, demographics donut, and male/female lines. 
 - Crowd entries table with pagination.
 - Site picker. Dates use that site's timezone.
 - Date control. **Today** is the site's current local day. Another day loads that day's analytics and entries.
@@ -45,24 +45,14 @@ npm run build
 npm run preview
 ```
 
-## Configuration
-
-The API base URL defaults to `https://hiring-dev.internal.kloudspot.com`. Override it with an env file:
-
-```bash
-VITE_API_URL=https://hiring-dev.internal.kloudspot.com
-```
-
 ## Sign in
 
-Use the accounts from the assessment brief:
+Use the accounts for login:
 
 | Email | Password |
 |---|---|
 | test@test.com | 1234567890 |
 | dummy@example.com | 1234567890 |
-
-Both accounts have role `user`. Creating users and starting the simulator are admin-only and are not part of this UI.
 
 ## Scripts
 
@@ -73,19 +63,6 @@ Both accounts have role `user`. Creating users and starting the simulator are ad
 | `npm run preview` | Serve the production build |
 | `npm run lint` | Run ESLint |
 
-## API
-
-Authenticated calls send `Authorization: Bearer <token>`.
-
-| Use | Method and path |
-|---|---|
-| Login | `POST /api/auth/login` |
-| Sites | `GET /api/sites` |
-| Footfall, dwell, occupancy, demographics | `POST /api/analytics/...` |
-| Entry-exit log | `POST /api/analytics/entry-exit` |
-| Live occupancy and alerts | Socket.IO on the same host (`live_occupancy`, `alert`) |
-
-`fromUtc` and `toUtc` are UTC epoch milliseconds for the selected site-local day.
 
 ## Layout
 
